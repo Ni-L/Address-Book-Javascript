@@ -126,6 +126,17 @@ function SearchName(addressbook)
     if(addressbook.firstName=="Rani")
     return addressbook;
 
-}
+
 let searchResult=addressArr.find(SearchName);
 console.log("Result after searching " +searchResult);
+
+//UC5-DeleteAddress by name
+function DeleteAddressBook()
+{
+    let resultAddress=SearchName(addressbook);
+    var index=addressArr.indexOf(resultAddress);
+    return index;
+}
+let deleteIndex=addressArr.find(DeleteAddressBook);
+console.log(addressArr.splice(deleteIndex,4)+"is Deleted");
+}
