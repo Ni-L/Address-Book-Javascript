@@ -106,12 +106,26 @@ let addressArr=new Array();
 try
 {
     let address1 = new AddressBook("Ritesh","Shelke","Atpost","Akola","Maharashtra","444202","9898977099","ritesh@gmail.com");
-    let address2 = new AddressBook("Mogli","Zha","Atpost","Uttar","Maharashtra","444202","9898977099","mogli@gmail.com");
+    let address2 = new AddressBook("Mogli","Zha","Hgtat","Uttar","Maharashtra","444777","9898937099","mogli@gmail.com");
+    let address3 = new AddressBook("Tanu","Bunde","Caadp","Pradesh","Maharashtra","445678","9896370099","tanu@gmail.com");
+    let address4 = new AddressBook("Rani","Pagrut","Bldana","Mumbai","Maharashtra","447898","9998977099","rani@gmail.com"); 
     addressArr.push(address1);
     addressArr.push(address2);
+    addressArr.push(address3);
+    addressArr.push(address4);
     console.log(addressArr);
 }
 catch(e)
 {
     console.error(e);
 }
+
+//UC4 Searching an adress by using the first name
+function SearchName(addressbook)
+{
+    if(addressbook.firstName=="Rani")
+    return addressbook;
+
+}
+let searchResult=addressArr.find(SearchName);
+console.log("Result after searching " +searchResult);
