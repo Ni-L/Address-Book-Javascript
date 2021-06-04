@@ -100,3 +100,18 @@ catch(ex)
 {
     console.error(ex);
 }
+
+//UC3--Defining an Address book and storing address
+let addressArr=new Array();
+try
+{
+    let address1 = new AddressBook("Ritesh","Shelke","Atpost","Akola","Maharashtra","444202","9898977099","ritesh@gmail.com");
+    let address2 = new AddressBook("Mogli","Zha","Atpost","Uttar","Maharashtra","444202","9898977099","mogli@gmail.com");
+    addressArr.push(address1);
+    addressArr.push(address2);
+    console.log(addressArr);
+}
+catch(e)
+{
+    console.error(e);
+}
