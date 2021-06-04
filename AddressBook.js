@@ -152,9 +152,9 @@ console.log("Total count of addresses "+addressArr.reduce(GetTotal,0));
 
 
 //UC7-Checking for duplicate entries
-function CheckDuplicate(check)
+function CheckDuplicate(a)
 {
-    if(check.firstName.includes("Rani"))
+    if(a.firstName.includes("Rani"))
     ++n;
 return n;
 }
@@ -167,3 +167,7 @@ else if(count>1)
 {
     console.log("There is duplicate entry for the given name")
 }
+
+//UC8-Getting person's name from a city/state
+let peopleFromCity=addressArr.filter(a=>a.city.includes("Akola"));
+console.log("People from the given city are: "+peopleFromCity);
