@@ -149,3 +149,21 @@ function GetTotal(a){
    return n;
 }
 console.log("Total count of addresses "+addressArr.reduce(GetTotal,0));
+
+
+//UC7-Checking for duplicate entries
+function CheckDuplicate(check)
+{
+    if(check.firstName.includes("Rani"))
+    ++n;
+return n;
+}
+let count = addressArr.filter(CheckDuplicate);
+if(count=1)
+{
+    console.log("There is no duplicate entry for the name");
+}
+else if(count>1)
+{
+    console.log("There is duplicate entry for the given name")
+}
