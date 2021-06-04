@@ -180,3 +180,6 @@ function ReturnCityMap(a)
 let addressCityMap= addressArr.map(ReturnCityMap);
 console.log("Viewing the people by their city")
 console.log(addressCityMap);
+
+//UC10-count of people living in a city/state
+console.log("Number of people from that city is: "+peopleFromCity.length);
