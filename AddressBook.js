@@ -140,3 +140,12 @@ function DeleteAddressBook()
 let deleteIndex=addressArr.find(DeleteAddressBook);
 console.log(addressArr.splice(deleteIndex,4)+"is Deleted");
 }
+//UC6-Getting count of total address 
+let n=0;
+function GetTotal(a){
+   if(a!=null){
+       ++n;
+   }
+   return n;
+}
+console.log("Total count of addresses "+addressArr.reduce(GetTotal,0));
