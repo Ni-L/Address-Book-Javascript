@@ -171,3 +171,12 @@ else if(count>1)
 //UC8-Getting person's name from a city/state
 let peopleFromCity=addressArr.filter(a=>a.city.includes("Akola"));
 console.log("People from the given city are: "+peopleFromCity);
+
+//UC9-Find person by city/state
+function ReturnCityMap(a)
+{
+    return a.city+ "->"+a.firstName;
+}
+let addressCityMap= addressArr.map(ReturnCityMap);
+console.log("Viewing the people by their city")
+console.log(addressCityMap);
